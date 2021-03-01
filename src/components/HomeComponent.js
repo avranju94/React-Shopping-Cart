@@ -11,8 +11,6 @@ class Home extends Component{
     }
 
     render(){
-    	console.log('hello');
-    	console.log(this.props.items);
     	let itemList = this.props.items.map(item=>{
             return(
                 <div className="card" key={item.id}>

@@ -24,13 +24,13 @@ class Header extends Component {
         <Navbar dark expand="md">
           <div className="container">
               <NavbarToggler onClick={this.toggleNav} />
-              <NavbarBrand className="mr-auto" href="/">
+              <NavbarBrand className="mr-auto" href="/home">
                <h4>Shopping</h4>
               </NavbarBrand>
               <Collapse isOpen={this.state.isNavOpen} navbar>
                 <Nav navbar>
                     <NavItem>
-                        <NavLink className="nav-link"  to='/home'><span className="fa fa-home fa-lg"></span> Shop</NavLink>
+                        <NavLink className="nav-link active"  to='/home'><span className="fa fa-home fa-lg"></span> Shop</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className="nav-link" to='/cart'><span className="fa fa-shopping-cart fa-lg"></span> Cart</NavLink>
