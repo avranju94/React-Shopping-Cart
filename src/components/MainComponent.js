@@ -1,8 +1,8 @@
-import { Navbar, NavbarBrand } from 'reactstrap';
 import React, { Component } from 'react';
 import Header from './HeaderComponent.js';
 import Home from './HomeComponent';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import Cart from './CartComponent';
+import { Switch, Route } from 'react-router-dom';
 
 class Main extends Component {
    constructor(props) {
@@ -14,18 +14,12 @@ class Main extends Component {
 
   
   render() {
-
-    const HomePage = () => {
-      return(
-        <Home />
-        );
-    }
-
     return (
       <div>
          <Header />
             <Switch>
-               <Route path="/home" component={HomePage} />
+               <Route path="/home" component={Home} />
+               <Route path="/cart" component={Cart} />
             </Switch>
       </div>
     );
